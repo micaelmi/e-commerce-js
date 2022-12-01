@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <title>Estrela Natalina</title>
+
+    <link rel="stylesheet" href="./css/iziToast.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"
+    ></script>
+    <script defer src="./js/iziToast.min.js" type="text/javascript"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/checkout.js"></script>
+    <script defer src="./js/cep.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo Estrela Natalina" height="60" />
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="orders.html">Pedidos</a>
+        <a href="cart.html"> Carrinho </a>
+      </div>
+      <button id="open-menu">
+        <img src="./img/menu.svg" alt="Abrir Menu" />
+      </button>
+      <div class="links-mobile" id="menu">
+        <button id="close-menu">x</button>
+        <a href="index.html">Home</a>
+        <a href="orders.html">Pedidos</a>
+        <a href="cart.html">Carrinho</a>
+      </div>
+      <picture class="flasher">
+        <source
+          media="(max-width: 768px)"
+          srcset="img/flasher-mini.png"
+          type="image/png"
+        />
+        <img src="img/flasher.png" alt="Pisca-pisca" />
+      </picture>
+    </header>
+
+    <main>
+      <h2>
+        <img src="img/ball.png" alt="Bola Natalina" />
+        Finalização da Compra
+      </h2>
+      <form>
+        <fieldset>
+          <h2>SEUS DADOS</h2>
+          <input
+            required
+            type="text"
+            placeholder="CPF"
+            id="cpf"
+            onblur="verifyIfUserExists(this.value)"
+          />
+          <input required type="text" placeholder="Nome" id="name" />
+          <input required type="email" placeholder="E-mail" id="email" />
+        </fieldset>
+
+        <fieldset>
+          <h2>SEU ENDEREÇO</h2>
+          <input
+            required
+            type="text"
+            placeholder="CEP"
+            id="cep"
+            onblur="searchCEP(this.value)"
+          />
+          <input required type="text" placeholder="Estado" id="uf" />
+          <input required type="text" placeholder="Cidade" id="cidade" />
+          <input required type="text" placeholder="Bairro" id="bairro" />
+          <input
+            required
+            type="text"
+            placeholder="Logradouro"
+            id="logradouro"
+          />
+          <input required type="number" placeholder="Número" id="numero" />
+        </fieldset>
+        <fieldset>
+          <h2>PRODUTOS</h2>
+          <div id="products"></div>
+        </fieldset>
+        <div class="completed-purchase">
+          <button type="button" id="finish-purchase">
+            <img src="./img/gift.png" alt="Ícone de Presente" width="30" />
+            <p>Finalizar compra</p>
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+:root {
+  --primary: #a30909;
+  --secondary: #056803;
+  --secondary-hover: #024b01;
+  --dark: #111;
+  --light: #fff;
+}
+
+main,
+form,
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main form fieldset h2 {
+  margin: 0.6rem;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+  color: var(--secondary);
+  font-family: "El Messiri", sans-serif;
+}
+
+fieldset {
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+
+  border-radius: 20px;
+
+  border-color: rgb(230, 38, 38);
+
+  box-shadow: 0px 0px 0.7px rgba(238, 213, 213, 0.246),
+    0px 0px 2.2px rgba(243, 102, 102, 0.364),
+    0px 0px 10px rgba(224, 15, 15, 0.61);
+}
+
+input {
+  width: 20rem;
+
+  margin: 0.5rem;
+  padding: 0.25rem 0.5rem;
+
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  background-color: var(--light);
+}
+
+#products {
+  width: 20rem;
+  margin-inline: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+
+  margin-bottom: 1rem;
+  padding: 10px 1.5rem;
+
+  border-radius: 30px;
+  border: none;
+
+  color: var(--light);
+  background-color: var(--secondary);
+}

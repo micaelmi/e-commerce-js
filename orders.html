@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <title>Estrela Natalina</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/orders.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/orders.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo Estrela Natalina" height="60" />
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="orders.html">Pedidos</a>
+        <a href="cart.html"> Carrinho </a>
+      </div>
+      <button id="open-menu">
+        <img src="./img/menu.svg" alt="Abrir Menu" />
+      </button>
+      <div class="links-mobile" id="menu">
+        <button id="close-menu">x</button>
+        <a href="index.html">Home</a>
+        <a href="orders.html">Pedidos</a>
+        <a href="cart.html">Carrinho</a>
+      </div>
+      <picture class="flasher">
+        <source
+          media="(max-width: 768px)"
+          srcset="img/flasher-mini.png"
+          type="image/png"
+        />
+        <img src="img/flasher.png" alt="Pisca-pisca" />
+      </picture>
+    </header>
+
+    <main>
+      <h2>
+        <img src="img/ball.png" alt="Bola Natalina" />
+        Pedidos Realizados
+      </h2>
+      <div class="order-list"></div>
+    </main>
+  </body>
+</html>
