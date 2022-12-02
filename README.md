@@ -24,6 +24,8 @@ e os commits dele estão no meu repositório "https://github.com/micaelmi/fatec-
 mas como foi um projeto que ficou bem legal e completo, decidi fazer um 
 repositório só para ele.
 
+Desenvolvido com participação de Mayara Ribeiro (https://github.com/mayaribeiro)
+
 Acesse o site: https://micaelmi.github.io/e-commerce-js/
 
 
