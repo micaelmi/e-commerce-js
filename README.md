@@ -39,3 +39,5 @@ Acesse o site: https://micaelmi.github.io/e-commerce-js/
 - Cleave.js https://nosir.github.io/cleave.js/
 
 FELIZ NATAL!
+
+![image](https://user-images.githubusercontent.com/66328408/209172842-956ec34e-32a8-4e84-980f-affb9fab6df0.png)
